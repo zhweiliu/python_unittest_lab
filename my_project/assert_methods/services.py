@@ -1,5 +1,5 @@
 class MyService:
-    def download_img(self, url: str):
+    def download_image(self, url: str):
         if url:
             return True
 

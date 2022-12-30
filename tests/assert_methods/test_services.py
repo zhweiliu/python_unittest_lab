@@ -9,7 +9,7 @@ class TestMyServices(unittest.TestCase):
         my_service = MyService()
 
         # Action
-        result = my_service.download_img('http://my.site.com/a.png')
+        result = my_service.download_image('http://my.site.com/a.png')
 
         # Assert
         # self.assertEqual(True, result)
@@ -22,4 +22,4 @@ class TestMyServices(unittest.TestCase):
         # Assert
         with self.assertRaises(Exception):
             # Action
-            my_service.download_img("")
+            my_service.download_image("")

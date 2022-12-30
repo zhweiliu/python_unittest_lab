@@ -1,5 +1,6 @@
 class Calculator:
-    # using '*args' means method should accept multi parameters by ordered
+    # using '*args' means method should accept \
+    # multi parameters by ordered
     def add(self, *args):
         result = 0
 
