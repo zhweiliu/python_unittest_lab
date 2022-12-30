@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import Mock
-from my_project.services import student_services
+from my_project.student import student_services
 
 
 class TestStudentService(unittest.TestCase):
