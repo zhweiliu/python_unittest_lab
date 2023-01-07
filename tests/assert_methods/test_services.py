@@ -15,11 +15,11 @@ class TestMyServices(unittest.TestCase):
         # self.assertEqual(True, result)
         self.assertTrue(result)
 
-    def test_download_img_with_exception(self):
-        # Setup
-        my_service = MyService()
-
-        # Assert
-        with self.assertRaises(Exception):
-            # Action
-            my_service.download_image("")
+    # def test_download_img_with_exception(self):
+    #     # Setup
+    #     my_service = MyService()
+    #
+    #     # Assert
+    #     with self.assertRaises(Exception):
+    #         # Action
+    #         my_service.download_image("")

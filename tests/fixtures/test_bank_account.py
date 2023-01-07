@@ -22,29 +22,28 @@ class TestBankAccount(unittest.TestCase):
 
     def setUp(self) -> None:
         print('calling setUp')
-        # Setup
-        self.bank_account = BankAccount(10)
+
 
     def tearDown(self) -> None:
         print('calling tearDown')
-        self.bank_account = None
+
 
     def test_deposit_success(self):
         # Setup
-        # bank_account = BankAccount(0)
+        bank_account = BankAccount(10)
 
         # Action
-        self.bank_account.deposit(10)
+        bank_account.deposit(10)
 
         # Assert
-        self.assertEqual(20, self.bank_account.balance)
+        self.assertEqual(20, bank_account.balance)
 
     def test_withdraw_success(self):
         # Setup
-        # bank_account = BankAccount(10)
+        bank_account = BankAccount(10)
 
         # Action
-        self.bank_account.withdraw(10)
+        bank_account.withdraw(10)
 
         # Assert
-        self.assertEqual(0, self.bank_account.balance)
+        self.assertEqual(0, bank_account.balance)
